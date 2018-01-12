@@ -437,9 +437,6 @@ class MyPlot extends PluginBase
 	/* -------------------------- Non-API part -------------------------- */
 
 	public function onEnable() {
-		@mkdir($this->getDataFolder()); // for spoon detector
-		SpoonDetector::printSpoon($this, "spoon.txt");
-
 		$this->getLogger()->notice(TF::BOLD."Loading...");
 
 		$this->saveDefaultConfig();
